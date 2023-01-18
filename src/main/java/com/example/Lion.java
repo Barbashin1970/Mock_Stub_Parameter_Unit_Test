@@ -3,10 +3,16 @@ package com.example;
 import java.util.List;
 
 public class Lion {
+    boolean hasMane; // - переменная наличия-отсутствия ГРИВЫ льва
+    final Feline feline; // создали в зависимом классе поле -  из класса-зависимости
 
-    boolean hasMane;
+    //     1. Создать интерфейс для класса-зависимости. - Интерфейс Predator  уже создан
+    //     2. Создать в зависимом классе поле того же типа, что и интерфейс
+    //        По принципу инкапсуляции, его нужно сделать приватным.
+    public Lion(String sex, Feline feline) throws Exception {
+        //      3. Создать конструктор с параметром того же типа, что и интерфейс/класс от которого зависим.
+        this.feline = feline;  // 4. Внутри конструктора передать значение параметра в созданное поле:
 
-    public Lion(String sex) throws Exception {
         if ("Самец".equals(sex)) {
             hasMane = true;
         } else if ("Самка".equals(sex)) {
@@ -15,8 +21,7 @@ public class Lion {
             throw new Exception("Используйте допустимые значения пола животного - самец или самка");
         }
     }
-
-    Feline feline = new Feline();
+    //  Feline feline = new Feline(); - В оригинальном коде была зависимость
 
     public int getKittens() {
         return feline.getKittens();
