@@ -8,7 +8,7 @@ import java.util.List;
 public class FelineTestFact {
 
     @Test
-    public void getFamily() {
+    public void getFamilyFelineTest() {
         Feline feline = new Feline();
         String family = feline.getFamily();
         Assert.assertEquals("Кошачьи", family);
@@ -22,12 +22,27 @@ public class FelineTestFact {
     }
 
     @Test
-    public void getFoodTest2() throws Exception {
+    public void getFoodExceptionTest() throws Exception {
+        try {Feline feline = new Feline();
+        List<String> food = feline.getFood("Колобок");
+        Assert.assertEquals(List.of("Животные", "Птицы", "Рыба"), food);}
+        catch (Exception exception) {
+            Assert.assertEquals(exception.getMessage(), "Неизвестный вид животного, используйте значение Травоядное или Хищник");
+        };
+    }
+    @Test
+    public void getFoodAnimalTest() throws Exception {
         Animal animal = new Animal();
         List<String> food = animal.getFood("Травоядное");
         Assert.assertEquals(List.of("Трава", "Различные растения"), food);
     }
 
+    @Test
+    public void getFamilyAnimalTest() throws Exception {
+        Animal animal = new Animal();
+        String family = animal.getFamily();
+        Assert.assertEquals("Существует несколько семейств: заячьи, беличьи, мышиные, кошачьи, псовые, медвежьи, куньи", family);
+    }
     @Test
     public void eatMeatTest() throws Exception {
         Feline feline = new Feline();

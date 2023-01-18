@@ -8,16 +8,15 @@ import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 
 @RunWith(MockitoJUnitRunner.class)
-public class LionTest {
+public class LionTestMock {
     @Mock
     Feline feline;
 
     @Test
     public void getKittensTest() throws Exception {
-        // создай объект класса
         Lion lion = new Lion("Самка", feline);
-        Mockito.when(lion.getKittens()).thenReturn(11); //  стаб
-        Assert.assertEquals(11, lion.getKittens());
+        Mockito.when(lion.getKittens()).thenReturn(5); //  стаб
+        Assert.assertEquals(5, lion.getKittens());
     }
     @Mock
     Lion lion;
@@ -25,6 +24,12 @@ public class LionTest {
     public void getFoodTest() throws Exception {
         lion.getFood();
         Mockito.verify(lion).getFood(); // мок - проверяем
+    }
+
+    @Test
+    public void haveManeTest() {
+        lion.doesHaveMane();
+        Mockito.verify(lion).doesHaveMane(); // мок - проверяем
     }
 
 }
