@@ -24,6 +24,7 @@ public class Lion {
     //  Feline feline = new Feline(); - В оригинальном коде была зависимость
 
     public int getKittens() {
+
         return feline.getKittens();
     }
 
