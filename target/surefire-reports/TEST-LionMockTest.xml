@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="LionMockTest" time="0.383" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="LionMockTest" time="0.406" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2022.3.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -65,7 +65,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="LionMockTest" name="getFoodTest" time="0.366"/>
-  <testcase classname="LionMockTest" name="haveManeTest" time="0.001"/>
-  <testcase classname="LionMockTest" name="getKittensTest" time="0.016"/>
+  <testcase classname="LionMockTest" name="getFoodTest" time="0.393"/>
+  <testcase classname="LionMockTest" name="haveManeTest" time="0"/>
+  <testcase classname="LionMockTest" name="getKittensTest" time="0.013"/>
 </testsuite>

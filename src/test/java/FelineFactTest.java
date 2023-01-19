@@ -21,7 +21,7 @@ import java.util.List;
         }
 
         @Test
-        public void getFoodExceptionTest() throws Exception {
+        public void getFoodExceptionTest() {
             try {Feline feline = new Feline();
                 List<String> food = feline.getFood("Колобок");
                 Assert.assertEquals(List.of("Животные", "Птицы", "Рыба"), food);}
@@ -37,7 +37,7 @@ import java.util.List;
         }
 
         @Test
-        public void getFamilyAnimalTest() throws Exception {
+        public void getFamilyAnimalTest()  {
             Animal animal = new Animal();
             String family = animal.getFamily();
             Assert.assertEquals("Существует несколько семейств: заячьи, беличьи, мышиные, кошачьи, псовые, медвежьи, куньи", family);
@@ -50,7 +50,7 @@ import java.util.List;
         }
 
         @Test
-        public void getKittensTestParameter() {
+        public void getKittensWithArgumentTest() {
             Feline feline = new Feline();
             int kittens = feline.getKittens(10);
             Assert.assertEquals(10, kittens);

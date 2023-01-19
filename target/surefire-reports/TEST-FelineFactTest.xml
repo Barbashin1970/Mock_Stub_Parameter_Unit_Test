@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="FelineFactTest" time="0.006" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="FelineFactTest" time="0.001" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2022.3.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -67,10 +67,10 @@
   </properties>
   <testcase classname="FelineFactTest" name="getFoodTest" time="0.001"/>
   <testcase classname="FelineFactTest" name="getFoodExceptionTest" time="0"/>
-  <testcase classname="FelineFactTest" name="getFamilyAnimalTest" time="0.001"/>
-  <testcase classname="FelineFactTest" name="getFamilyFelineTest" time="0.001"/>
+  <testcase classname="FelineFactTest" name="getFamilyAnimalTest" time="0"/>
+  <testcase classname="FelineFactTest" name="getFamilyFelineTest" time="0"/>
   <testcase classname="FelineFactTest" name="getKittensTest" time="0"/>
-  <testcase classname="FelineFactTest" name="eatMeatTest" time="0.003"/>
-  <testcase classname="FelineFactTest" name="getKittensTestParameter" time="0"/>
+  <testcase classname="FelineFactTest" name="eatMeatTest" time="0"/>
   <testcase classname="FelineFactTest" name="getFoodAnimalTest" time="0"/>
+  <testcase classname="FelineFactTest" name="getKittensWithArgumentTest" time="0"/>
 </testsuite>
