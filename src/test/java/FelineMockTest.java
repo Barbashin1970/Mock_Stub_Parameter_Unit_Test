@@ -1,5 +1,5 @@
-import com.example.Animal;
-import com.example.Feline;
+import com.animalplanet.Animal;
+import com.animalplanet.Feline;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -8,7 +8,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 
 @RunWith(MockitoJUnitRunner.class)
-public class FelineTestMock {
+public class FelineMockTest {
     @Mock
     Feline feline; // подменим тип кошачий моком
     @Test

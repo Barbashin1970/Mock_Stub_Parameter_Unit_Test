@@ -1,5 +1,5 @@
-import com.example.Cat;
-import com.example.Feline;
+import com.animalplanet.Cat;
+import com.animalplanet.Feline;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,7 +8,7 @@ import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 
 @RunWith(MockitoJUnitRunner.class)
-public class CatTestMock {
+public class CatMockTest {
 
     @Mock
     Cat cat; // подменим кота моком

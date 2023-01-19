@@ -1,6 +1,5 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-untitled,com.example,Feline,15,0,0,0,5,0,5,0,5,0
-untitled,com.example,Animal,27,0,4,0,7,0,5,0,3,0
-untitled,com.example,Lion,17,22,2,2,4,7,4,2,2,2
-untitled,com.example,Main,63,0,0,0,13,0,2,0,2,0
-untitled,com.example,Cat,12,0,0,0,5,0,3,0,3,0
+untitled,com.animalplanet,Animal,0,27,0,4,0,7,0,5,0,3
+untitled,com.animalplanet,Cat,0,12,0,0,0,5,0,3,0,3
+untitled,com.animalplanet,Lion,0,39,0,4,0,11,0,6,0,4
+untitled,com.animalplanet,Feline,0,15,0,0,0,5,0,5,0,5

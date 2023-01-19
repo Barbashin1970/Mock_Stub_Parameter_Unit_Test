@@ -1,5 +1,5 @@
-import com.example.Feline;
-import com.example.Lion;
+import com.animalplanet.Feline;
+import com.animalplanet.Lion;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,7 +8,7 @@ import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 
 @RunWith(MockitoJUnitRunner.class)
-public class LionTestMock {
+public class LionMockTest {
     @Mock
     Feline feline;
 

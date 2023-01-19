@@ -1,13 +1,13 @@
-import com.example.Cat;
-import com.example.Feline;
+import com.animalplanet.Cat;
+import com.animalplanet.Feline;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.List;
 
-public class CatTestFact {
+public class CatFactTest {
     @Test
-    public void getSoundTest() throws Exception {
+    public void getSoundTest()  {
         Feline feline = new Feline();
         Cat cat = new Cat(feline);
         String voice = cat.getSound(); //
