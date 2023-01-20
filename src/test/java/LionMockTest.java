@@ -18,17 +18,9 @@ public class LionMockTest {
         Mockito.when(lion.getKittens()).thenReturn(5); //  стаб
         Assert.assertEquals(5, lion.getKittens());
     }
-    @Mock
-    Lion lion;
     @Test
     public void getFoodTest() throws Exception {
-        lion.getFood();
-        Mockito.verify(lion).getFood(); // мок - проверяем
-    }
-
-    @Test
-    public void haveManeTest() {
-        lion.doesHaveMane();
-        Mockito.verify(lion).doesHaveMane(); // мок - проверяем
+        feline.getFood("Хищник");
+        Mockito.verify(feline).getFood("Хищник"); // мок - проверяем
     }
 }
