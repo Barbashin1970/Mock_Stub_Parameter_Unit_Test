@@ -35,4 +35,5 @@ public class ParameterizedManeTest {
             Assert.assertEquals(exception.getMessage(),"Используйте допустимые значения пола животного - самец или самка");
         }
     }
+
 }

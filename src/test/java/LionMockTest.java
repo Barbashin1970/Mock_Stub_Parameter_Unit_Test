@@ -31,5 +31,4 @@ public class LionMockTest {
         lion.doesHaveMane();
         Mockito.verify(lion).doesHaveMane(); // мок - проверяем
     }
-
 }

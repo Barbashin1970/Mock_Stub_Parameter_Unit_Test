@@ -25,4 +25,5 @@ public class ParameterizedTest {
         int actual = feline.getKittens(kitten);
         Assert.assertEquals(kitten, actual);
     }
+
 }

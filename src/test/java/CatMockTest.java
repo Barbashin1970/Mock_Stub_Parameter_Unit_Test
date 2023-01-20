@@ -14,7 +14,7 @@ public class CatMockTest {
     Cat cat; // подменим кота моком
 
     @Test
-    public void getSoundTest() throws Exception {
+    public void getSoundTest() {
         Mockito.when(cat.getSound()).thenReturn("Moo"); //  стаб - возвращает звук
         Assert.assertEquals("Moo", cat.getSound());
     }
@@ -26,6 +26,5 @@ public class CatMockTest {
         feline.getFood("Кошачье семейство");
         Mockito.verify(feline).getFood(Mockito.anyString()); // мок - проверяем
     }
-
 
 }

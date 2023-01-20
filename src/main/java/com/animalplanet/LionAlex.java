@@ -16,5 +16,4 @@ public class LionAlex extends Lion{
     public int getKittens() {
         return 0;
     }
-
 }

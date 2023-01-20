@@ -1,5 +1,4 @@
 import com.animalplanet.Feline;
-import com.animalplanet.Lion;
 import com.animalplanet.LionAlex;
 import org.junit.Assert;
 import org.junit.Test;
@@ -43,4 +42,5 @@ public class LionAlexTest {
         int actual = lionAlex.getKittens();
         Assert.assertEquals(0, actual);
     }
+
 }

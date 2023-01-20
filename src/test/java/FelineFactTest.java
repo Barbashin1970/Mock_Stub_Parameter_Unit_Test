@@ -27,7 +27,7 @@ import java.util.List;
                 Assert.assertEquals(List.of("Животные", "Птицы", "Рыба"), food);}
             catch (Exception exception) {
                 Assert.assertEquals(exception.getMessage(), "Неизвестный вид животного, используйте значение Травоядное или Хищник");
-            };
+            }
         }
         @Test
         public void getFoodAnimalTest() throws Exception {
